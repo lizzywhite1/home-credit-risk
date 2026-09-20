@@ -4,10 +4,15 @@ version = "0.1.0"
 description = "Credit default risk prediction pipeline"
 authors = [{name = "Lizzy White", email = "lizzywhite018@icloud.com"}]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "duckdb>=1.5.5",
+    "pandas>=3.0.6",
+    "pandera>=0.33.1",
+]
 
 [dependency-groups]
 dev = [
+    "kaggle>=2.2.4",
     "mypy>=2.3.1",
     "pre-commit>=4.6.2",
     "pytest>=8.0",
